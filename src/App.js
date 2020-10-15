@@ -1,12 +1,18 @@
-import React,{ Component } from 'react';
+import React, { Component } from "react";
 
-class App extends Component{
+class App extends Component {
   render() {
-    return React.createElement(
-      "h1",
-      null,
-      "Hellow World!!"
-    )
+    return (
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+        <input
+          type="text"
+          onClick={() => {
+            console.log("a");
+          }}
+        />
+      </React.Fragment>
+    );
   }
 }
 
